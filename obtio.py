@@ -21,7 +21,6 @@ engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 
-# s=Service("C:\chromedriver_win32\chromedriver")
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
